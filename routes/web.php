@@ -14,3 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Authentication routes...
+Route::get('auth/login', 'Auth\AuthController@getLogin')->name('login');;
+Route::post('auth/login', 'Auth\AuthController@postLogin');
+Route::get('auth/logout', 'Auth\AuthController@getLogout');
+ 
+// Registration routes...
+Route::get('auth/register', 'Auth\AuthController@getRegister')->name('register');
+Route::post('auth/register', 'Auth\AuthController@postRegister');
+
+Route::get('/posts/view/{id}', 'PostController@view');

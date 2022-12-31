@@ -28,3 +28,7 @@ php artisan migrate
 |        | GET|HEAD | api/user                 |      | Closure                                      | api,auth:api |
 +--------+----------+--------------------------+------+----------------------------------------------+--------------+   
 ```
+
+
+Screens 
+Welcome - List of all posts

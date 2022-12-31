@@ -56,4 +56,17 @@ class PostController extends Controller
         return new PostResource($post);
     }
 
+    
+    /**
+     * Display the specified resource.
+     *
+     * @param  \App\Post  $post
+     */
+    public function view($post)
+    {
+        return view('post',[
+            "post" => $post
+        ]);
+    }
+
 }
